@@ -1,0 +1,235 @@
+	
+meta	
+startMonth	"2025-11"
+currentMonth	"2026-09"
+currency	"BDT"
+currencySymbol	"৳"
+site	
+deceased	
+name	"SAHEL MIA"
+nameBn	"[মৃত ব্যক্তির নাম]"
+birthDate	"[18 Oct, 1996]"
+passingDate	"[18 Oct, 2025]"
+coverImage	"images/cover.jpg"
+memorialMessage	
+en	"He met every friend with the same warmth he gave his family. This is our way of making sure that warmth still reaches them."
+bn	"তিনি বন্ধুদের সাথে যতটা উষ্ণতা নিয়ে মিশতেন, পরিবারের সাথেও ঠিক ততটাই। আমরা চাই সেই উষ্ণতা তাঁদের কাছে পৌঁছাতে থাকুক।"
+purposeStatement	
+en	"A small group of friends set aside a monthly contribution for his wife and two daughters. This page keeps that promise visible and accountable."
+bn	"কয়েকজন বন্ধু মিলে প্রতি মাসে তাঁর স্ত্রী ও দুই মেয়ের জন্য কিছু অর্থ রাখেন। এই পাতাটি সেই প্রতিশ্রুতিকে স্বচ্ছ ও দৃশ্যমান রাখে।"
+donors	
+0	
+id	"SRV07"
+name	"Md. Sourov"
+expectedAmount	500
+contributions	
+2025-11	500
+2025-12	500
+2026-01	500
+2026-02	500
+2026-03	500
+2026-04	500
+2026-05	500
+2026-06	500
+2026-07	500
+2026-08	500
+2026-09	500
+1	
+id	"RIF01"
+name	"Muntasir Mamun Rifat"
+expectedAmount	500
+contributions	
+2025-11	500
+2025-12	500
+2026-01	500
+2026-02	509
+2026-03	1000
+2026-04	500
+2026-05	1018
+2026-06	509
+2026-07	509
+2	
+id	"DIDAR"
+name	"Detharuzzaman Sakil"
+expectedAmount	500
+contributions	
+2025-11	500
+2025-12	500
+2026-01	1070
+2026-02	515
+2026-03	515
+2026-04	515
+2026-05	515
+2026-06	510
+2026-07	510
+2026-08	510
+2026-09	510
+3	
+id	"KAM999"
+name	"Kamrul Huda"
+expectedAmount	500
+contributions	
+2025-11	500
+2025-12	500
+2026-01	510
+2026-02	510
+2026-03	510
+2026-04	510
+4	
+id	"D005"
+name	"[DONOR_NAME_5]"
+expectedAmount	2500
+contributions	
+2025-06	2500
+2025-07	2500
+2025-08	2500
+2025-09	2500
+2025-10	2500
+2025-11	2500
+2025-12	2500
+2026-01	2500
+2026-02	2500
+2026-03	2500
+2026-04	2500
+2026-05	2500
+2026-06	2500
+2026-07	2500
+2026-08	2500
+2026-09	2500
+5	
+id	"D006"
+name	"[DONOR_NAME_6]"
+expectedAmount	1500
+contributions	
+2025-06	1500
+2025-07	1500
+2025-08	1500
+2025-10	1500
+2025-11	1500
+2025-12	1000
+2026-01	1500
+2026-02	1500
+2026-03	1500
+2026-04	1500
+2026-05	1500
+6	
+id	"D007"
+name	"[DONOR_NAME_7]"
+expectedAmount	2000
+contributions	
+2025-06	2000
+2025-07	2000
+2025-08	2000
+2025-09	2000
+2025-10	2000
+2025-11	2000
+2025-12	2000
+2026-01	2000
+2026-02	2000
+2026-03	2000
+2026-04	2000
+2026-05	2000
+2026-06	2000
+2026-07	2000
+2026-08	2000
+2026-09	2000
+7	
+id	"D008"
+name	"[DONOR_NAME_8]"
+expectedAmount	1000
+contributions	
+2025-06	1000
+2025-07	1000
+2025-08	1000
+2025-09	1000
+2025-10	1000
+2025-11	1000
+2025-12	1000
+2026-01	1000
+2026-02	1000
+2026-03	1000
+2026-04	1000
+2026-05	1000
+2026-06	1000
+2026-07	1000
+2026-08	1000
+2026-09	1000
+familyPayments	
+0	
+date	"2025-11-05"
+amount	1925
+note	""
+1	
+date	"2025-12-06"
+amount	2000
+note	""
+2	
+date	"2026-01-05"
+amount	3055
+note	""
+3	
+date	"2026-02-05"
+amount	4074
+note	""
+4	
+date	"2026-03-05"
+amount	2000
+note	"To Sakil for Eid Clothes"
+5	
+date	"2026-04-05"
+amount	5456
+note	"2400 for Eid and 3000 as monthly"
+6	
+date	"2026-05-05"
+amount	5097
+note	"3000 on 7.5.25 & 2000 on Eid ul Adha"
+7	
+date	"2026-06-05"
+amount	3055
+note	""
+8	
+date	"2026-07-05"
+amount	5092
+note	""
+9	
+date	"2026-08-05"
+amount	4583
+note	""
+10	
+date	"2026-09-05"
+amount	3056
+note	""
+gallery	
+0	
+src	"images/gallery-01.jpg"
+caption	
+en	"[CAPTION_1]"
+bn	"[বাংলা ক্যাপশন ১]"
+1	
+src	"images/gallery-02.jpg"
+caption	
+en	"[CAPTION_2]"
+bn	"[বাংলা ক্যাপশন ২]"
+2	
+src	"images/gallery-03.jpg"
+caption	
+en	"[CAPTION_3]"
+bn	"[বাংলা ক্যাপশন ৩]"
+3	
+src	"images/gallery-04.jpg"
+caption	
+en	"[CAPTION_4]"
+bn	"[বাংলা ক্যাপশন ৪]"
+4	
+src	"images/gallery-05.jpg"
+caption	
+en	"[CAPTION_5]"
+bn	"[বাংলা ক্যাপশন ৫]"
+5	
+src	"images/gallery-06.jpg"
+caption	
+en	"[CAPTION_6]"
+bn	"[বাংলা ক্যাপশন ৬]"
+site
+deceased
+passingDate
