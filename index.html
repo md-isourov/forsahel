@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>In loving memory — supporting his family</title>
+<meta name="description" content="A private community page keeping monthly support for his family transparent and easy to follow.">
+<meta name="robots" content="noindex, nofollow">
+
+<meta property="og:title" content="In loving memory — supporting his family">
+<meta property="og:description" content="A private community page keeping monthly support for his family transparent and easy to follow.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/cover.jpg">
+
+<link rel="icon" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <nav class="nav container" aria-label="Primary">
+    <a class="nav-brand" href="index.html" data-i18n="hero_kicker">In loving memory</a>
+    <ul class="nav-links">
+      <li><a href="index.html" aria-current="page" data-i18n="nav_home">Home</a></li>
+      <li><a href="contributions.html" data-i18n="nav_contributions">Contributions</a></li>
+      <li><a href="gallery.html" data-i18n="nav_gallery">Gallery</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="lang-btn" type="button" data-lang-toggle data-lang-toggle-label>বাংলা</button>
+      <button class="menu-btn" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-menu container" id="mobile-menu" data-mobile-menu>
+    <a href="index.html" aria-current="page" data-i18n="nav_home">Home</a>
+    <a href="contributions.html" data-i18n="nav_contributions">Contributions</a>
+    <a href="gallery.html" data-i18n="nav_gallery">Gallery</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero container">
+    <div class="hero-media">
+      <img data-cover-image src="images/cover.jpg" alt="">
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="hero-text">
+        <p class="hero-kicker" data-i18n="hero_kicker">In loving memory</p>
+        <h1 class="hero-name" data-deceased-name>[DECEASED_PERSON_NAME]</h1>
+        <p class="hero-years" data-deceased-years></p>
+        <p class="hero-message" data-memorial-message></p>
+      </div>
+    </div>
+
+    <p class="hero-purpose" data-purpose-statement></p>
+
+    <div class="stats" data-stats>
+      <div class="stat-card">
+        <p class="stat-label" data-i18n="stat_given_this_month">Given this month</p>
+        <p class="stat-value" data-stat-this-month>—</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-label" data-i18n="stat_last_given">Last given</p>
+        <p class="stat-value" data-stat-last-given>—</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-label" data-i18n="stat_total_given">Total given</p>
+        <p class="stat-value" data-stat-total>—</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="about-block">
+      <h2 class="section-heading" data-i18n="home_about_heading">How this works</h2>
+      <p class="section-sub" data-i18n="home_about_body" style="margin-bottom:20px;">A small circle of friends contributes every month.</p>
+      <a class="btn btn-primary" href="contributions.html" data-i18n="home_cta">See the contributions</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <span data-i18n="footer_statement">Maintained quietly by friends, for the family.</span>
+    <span><span data-i18n="footer_made_with_care">Made with care by friends.</span> · <span id="year"></span></span>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/home.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

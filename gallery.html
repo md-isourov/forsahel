@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — In loving memory</title>
+<meta name="description" content="A gallery of photographs kept in his memory.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Gallery — In loving memory">
+<meta property="og:type" content="website">
+<link rel="icon" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <nav class="nav container" aria-label="Primary">
+    <a class="nav-brand" href="index.html" data-i18n="hero_kicker">In loving memory</a>
+    <ul class="nav-links">
+      <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+      <li><a href="contributions.html" data-i18n="nav_contributions">Contributions</a></li>
+      <li><a href="gallery.html" aria-current="page" data-i18n="nav_gallery">Gallery</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="lang-btn" type="button" data-lang-toggle data-lang-toggle-label>বাংলা</button>
+      <button class="menu-btn" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-menu container" id="mobile-menu" data-mobile-menu>
+    <a href="index.html" data-i18n="nav_home">Home</a>
+    <a href="contributions.html" data-i18n="nav_contributions">Contributions</a>
+    <a href="gallery.html" aria-current="page" data-i18n="nav_gallery">Gallery</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="section-tight container">
+    <h1 class="section-heading" data-i18n="gallery_heading">Photo gallery</h1>
+    <p class="section-sub" data-i18n="gallery_subheading">Moments we're glad we have.</p>
+
+    <div class="gallery-grid" data-gallery-grid></div>
+  </section>
+</main>
+
+<div class="lightbox" data-lightbox role="dialog" aria-modal="true" aria-hidden="true" aria-label="Photo viewer">
+  <div class="lightbox-figure">
+    <button class="lightbox-close" data-lightbox-close type="button" aria-label="Close">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg>
+      <span class="visually-hidden" data-i18n="lightbox_close">Close</span>
+    </button>
+    <button class="lightbox-nav prev" data-lightbox-prev type="button" aria-label="Previous photo">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      <span class="visually-hidden" data-i18n="lightbox_prev">Previous photo</span>
+    </button>
+    <img class="lightbox-img" data-lightbox-img src="" alt="">
+    <p class="lightbox-caption" data-lightbox-caption></p>
+    <button class="lightbox-nav next" data-lightbox-next type="button" aria-label="Next photo">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      <span class="visually-hidden" data-i18n="lightbox_next">Next photo</span>
+    </button>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <span data-i18n="footer_statement">Maintained quietly by friends, for the family.</span>
+    <span><span data-i18n="footer_made_with_care">Made with care by friends.</span> · <span id="year"></span></span>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/gallery.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

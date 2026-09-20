@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contributions — In loving memory</title>
+<meta name="description" content="See which donors are up to date and look up your own contribution history with your Donor ID.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Contributions — In loving memory">
+<meta property="og:type" content="website">
+<link rel="icon" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <nav class="nav container" aria-label="Primary">
+    <a class="nav-brand" href="index.html" data-i18n="hero_kicker">In loving memory</a>
+    <ul class="nav-links">
+      <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+      <li><a href="contributions.html" aria-current="page" data-i18n="nav_contributions">Contributions</a></li>
+      <li><a href="gallery.html" data-i18n="nav_gallery">Gallery</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="lang-btn" type="button" data-lang-toggle data-lang-toggle-label>বাংলা</button>
+      <button class="menu-btn" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-menu container" id="mobile-menu" data-mobile-menu>
+    <a href="index.html" data-i18n="nav_home">Home</a>
+    <a href="contributions.html" aria-current="page" data-i18n="nav_contributions">Contributions</a>
+    <a href="gallery.html" data-i18n="nav_gallery">Gallery</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="section-tight container">
+    <h1 class="section-heading" data-i18n="contrib_heading">Contributions</h1>
+    <p class="section-sub" data-i18n="contrib_subheading">An open record of who's up to date.</p>
+
+    <div class="donor-grid" data-donor-grid role="list" aria-label="Donor status list"></div>
+
+    <section class="lookup-card" aria-labelledby="lookup-heading">
+      <h2 class="section-heading" id="lookup-heading" style="font-size:1.3rem;" data-i18n="lookup_heading">View your contributions</h2>
+      <p class="section-sub" style="margin-bottom:0;" data-i18n="lookup_body">Enter your Donor ID to see your personal contribution history.</p>
+
+      <form class="lookup-form" data-lookup-form novalidate>
+        <label for="donor-id-input" class="visually-hidden" data-i18n="lookup_placeholder">Enter your Donor ID</label>
+        <input
+          id="donor-id-input"
+          class="lookup-input"
+          type="text"
+          autocomplete="off"
+          data-lookup-input
+          data-i18n-placeholder="lookup_placeholder"
+          placeholder="Enter your Donor ID"
+          aria-describedby="lookup-error">
+        <button class="btn btn-primary" type="submit" data-i18n="lookup_button">View contributions</button>
+      </form>
+      <p class="form-error" id="lookup-error" data-lookup-error role="alert"></p>
+
+      <div class="dashboard" data-dashboard aria-hidden="true">
+        <div class="dashboard-head">
+          <h3 class="section-heading" style="font-size:1.2rem;" data-dash-name></h3>
+          <button class="btn btn-secondary" type="button" data-lookup-clear data-i18n="lookup_clear">Close</button>
+        </div>
+
+        <div class="dash-stats">
+          <div class="dash-stat">
+            <p class="dash-stat-label" data-i18n="dash_total">Total contributed</p>
+            <p class="dash-stat-value" data-dash-total>—</p>
+          </div>
+          <div class="dash-stat">
+            <p class="dash-stat-label" data-i18n="dash_current_month">This month</p>
+            <p class="dash-stat-value" data-dash-current>—</p>
+          </div>
+          <div class="dash-stat">
+            <p class="dash-stat-label" data-i18n="dash_due">Months due</p>
+            <p class="dash-stat-value" data-dash-due>—</p>
+          </div>
+          <div class="dash-stat">
+            <p class="dash-stat-label" data-i18n="dash_last_contribution">Last contribution</p>
+            <p class="dash-stat-value" data-dash-last>—</p>
+          </div>
+        </div>
+
+        <h4 class="section-heading" style="font-size:1.05rem; margin-bottom:14px;" data-i18n="dash_history_heading">Monthly history</h4>
+        <div class="history-list" data-history-list></div>
+      </div>
+    </section>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <span data-i18n="footer_statement">Maintained quietly by friends, for the family.</span>
+    <span><span data-i18n="footer_made_with_care">Made with care by friends.</span> · <span id="year"></span></span>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/contributions.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
