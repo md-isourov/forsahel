@@ -8,7 +8,7 @@
   "site": {
     "deceased": {
       "name": "SAHEL MIA",
-      "nameBn": "[মৃত ব্যক্তির নাম]",
+      "nameBn": "[সাহেল মিয়া]",
       "birthDate": "[18 Oct, 1996]",
       "passingDate": "[18 Oct, 2025]",
       "coverImage": "images/cover.jpg",
@@ -17,8 +17,8 @@
         "bn": "তিনি বন্ধুদের সাথে যতটা উষ্ণতা নিয়ে মিশতেন, পরিবারের সাথেও ঠিক ততটাই। আমরা চাই সেই উষ্ণতা তাঁদের কাছে পৌঁছাতে থাকুক।"
       },
       "purposeStatement": {
-        "en": "A small group of friends set aside a monthly contribution for his wife and two daughters. This page keeps that promise visible and accountable.",
-        "bn": "কয়েকজন বন্ধু মিলে প্রতি মাসে তাঁর স্ত্রী ও দুই মেয়ের জন্য কিছু অর্থ রাখেন। এই পাতাটি সেই প্রতিশ্রুতিকে স্বচ্ছ ও দৃশ্যমান রাখে।"
+        "en": "A small group of friends set aside a monthly contribution for his wife, two daughters & his mother. This page keeps that promise visible and accountable.",
+        "bn": "কয়েকজন বন্ধু মিলে প্রতি মাসে তাঁর স্ত্রী, দুই মেয়ের এবং তার মায়ের জন্য কিছু অর্থ রাখেন। এই পাতাটি সেই প্রতিশ্রুতিকে স্বচ্ছ ও দৃশ্যমান রাখে।"
       }
     }
   },
