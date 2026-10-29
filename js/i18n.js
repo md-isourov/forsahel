@@ -65,6 +65,7 @@ const TRANSLATIONS = {
 
     footer_statement: "Maintained quietly by friends, for the family.",
     footer_made_with_care: "Made with care by friends.",
+    footer_admin: "Admin",
   },
   bn: {
     nav_home: "হোম",
@@ -124,6 +125,7 @@ const TRANSLATIONS = {
 
     footer_statement: "বন্ধুদের পক্ষ থেকে নীরবে পরিবারের জন্য পরিচালিত।",
     footer_made_with_care: "বন্ধুদের যত্নে তৈরি।",
+    footer_admin: "অ্যাডমিন",
   },
 };
 
