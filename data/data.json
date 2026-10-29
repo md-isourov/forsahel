@@ -25,7 +25,7 @@
   "donors": [
     {
       "id": "SRV07",
-      "name": "Md. Sourov",
+      "name": "Sourov",
       "expectedAmount": 500,
       "contributions": {
         "2025-11": 500,
@@ -38,12 +38,13 @@
         "2026-06": 500,
         "2026-07": 500,
         "2026-08": 500,
-        "2026-09": 500
+        "2026-09": 500,
+        "2026-10': 500
       }
     },
     {
       "id": "RIF01",
-      "name": "Muntasir Mamun Rifat",
+      "name": "Rifat",
       "expectedAmount": 500,
       "contributions": {
         "2025-11": 500,
@@ -61,7 +62,7 @@
     },
     {
       "id": "DIDAR",
-      "name": "Detharuzzaman Sakil",
+      "name": "Sakil",
       "expectedAmount": 500,
       "contributions": {
         "2025-11": 500,
@@ -79,7 +80,7 @@
     },
     {
       "id": "KAM999",
-      "name": "Kamrul Huda",
+      "name": "Kamrul",
       "expectedAmount": 500,
       "contributions": {
         "2025-11": 500,
@@ -100,7 +101,7 @@
       }
     },
     {
-      "id": "LUT22",
+      "id": "LUT5258",
       "name": "Lutfur",
       "expectedAmount": 500,
       "contributions": {
@@ -111,7 +112,7 @@
       }
     },
     {
-      "id": "RUB33",
+      "id": "RUB00",
       "name": "Rubel",
       "expectedAmount": 500,
       "contributions": {}
@@ -185,7 +186,8 @@
         "2026-06": 1020,
         "2026-07": 1020,
         "2026-08": 1020,
-        "2026-09": 1020
+        "2026-09": 1020,
+        "2026-10": 1020
       }
     },
     {
@@ -265,6 +267,11 @@
       "date": "2026-09-05",
       "amount": 3056,
       "note": ""
+    },
+    {
+      "date": "2026-10-05",
+      "amount": 3055,
+      "note":
     }
   ],
   "gallery": [
