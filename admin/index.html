@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin — In loving memory</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="../images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav container" aria-label="Primary">
+    <a class="nav-brand" href="../index.html">In loving memory</a>
+    <div class="nav-actions">
+      <a class="lang-btn" href="../index.html" style="text-decoration:none;">Back to site</a>
+      <button class="lang-btn" type="button" data-logout hidden>Log out</button>
+    </div>
+  </nav>
+</header>
 
+<main class="container section-tight">
+  <section class="login-card" data-login>
+    <h1 class="section-heading">Admin</h1>
+    <p class="section-sub" style="margin-bottom:18px;">Enter the password to see the full ledger.</p>
+    <form class="lookup-form" data-login-form novalidate style="max-width:none;">
+      <label for="admin-password" class="visually-hidden">Password</label>
+      <input id="admin-password" class="lookup-input" type="password" autocomplete="current-password" placeholder="Password" data-password aria-describedby="login-error">
+      <button class="btn btn-primary" type="submit">Log in</button>
+    </form>
+    <p class="form-error" id="login-error" data-login-error role="alert"></p>
+  </section>
+
+  <section data-admin-view hidden>
+    <h1 class="section-heading">Ledger</h1>
+    <p class="section-sub">Every donor, every month, with what was given to the family and what's still in hand.</p>
+    <div class="dash-stats" data-summary></div>
+    <div class="ledger-wrap" data-table-wrap tabindex="0" aria-label="Contribution ledger, scrolls sideways"></div>
+    <p class="ledger-note">Cells marked “due” are past months with no contribution recorded. The current month is never marked due.</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <span>Maintained quietly by friends, for the family.</span>
+  </div>
+</footer>
+
+<script src="../js/data.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>

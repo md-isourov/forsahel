@@ -1,0 +1,78 @@
+/* Admin-only styles. Uses the colour tokens from ../css/style.css so light/dark match the site. */
+
+[hidden] { display: none !important; }
+
+.login-card {
+  max-width: 460px;
+  margin: 48px auto;
+  background: var(--teal-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-l);
+  padding: 28px;
+}
+
+.ledger-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-m);
+  background: var(--surface);
+  max-width: 100%;
+}
+
+.ledger {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  font-size: 0.88rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.ledger th, .ledger td {
+  padding: 10px 12px;
+  text-align: right;
+  white-space: nowrap;
+  border-bottom: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+}
+.ledger th:last-child, .ledger td:last-child { border-right: none; }
+
+.ledger thead th {
+  background: var(--surface-sunken);
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.ledger .sticky {
+  position: sticky;
+  left: 0;
+  text-align: left;
+  background: var(--surface);
+  z-index: 1;
+  font-weight: 500;
+  min-width: 130px;
+}
+.ledger thead .sticky { background: var(--surface-sunken); z-index: 2; }
+
+.ledger .cell-due {
+  background: var(--due-soft);
+  color: var(--due);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.ledger .cell-empty { color: var(--ink-muted); }
+.ledger .col-total { font-weight: 600; background: var(--surface-sunken); }
+
+.ledger tfoot td, .ledger tfoot th { background: var(--surface-sunken); }
+.ledger tfoot tr:first-child td, .ledger tfoot tr:first-child th { border-top: 2px solid var(--border); }
+.ledger tfoot .sticky { background: var(--surface-sunken); }
+.ledger .row-given td:not(.sticky) { color: var(--due-strong); }
+.ledger .row-balance td:not(.sticky) { color: var(--ok); font-weight: 600; }
+.ledger tbody tr:last-child td, .ledger tfoot tr:last-child td { border-bottom: none; }
+
+.ledger-note {
+  margin-top: 12px;
+  font-size: 0.82rem;
+  color: var(--ink-muted);
+}
+
+.ledger-wrap:focus-visible { box-shadow: var(--focus-ring); }
