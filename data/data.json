@@ -25,7 +25,7 @@
   "donors": [
     {
       "id": "SRV07",
-      "name": "Sourov",
+      "name": "Md. Sourov",
       "expectedAmount": 500,
       "contributions": {
         "2025-11": 500,
@@ -44,7 +44,7 @@
     },
     {
       "id": "RIF01",
-      "name": "Rifat",
+      "name": "Muntasir Mamun Rifat",
       "expectedAmount": 500,
       "contributions": {
         "2025-11": 500,
@@ -56,13 +56,14 @@
         "2026-05": 1018.5,
         "2026-06": 509,
         "2026-07": 509,
+        "2026-08": 500,
         "2026-09": 500,
         "2026-10": 500
       }
     },
     {
       "id": "DIDAR",
-      "name": "Sakil",
+      "name": "Detharuzzaman Sakil",
       "expectedAmount": 500,
       "contributions": {
         "2025-11": 500,
@@ -80,7 +81,7 @@
     },
     {
       "id": "KAM999",
-      "name": "Kamrul",
+      "name": "Kamrul Huda",
       "expectedAmount": 500,
       "contributions": {
         "2025-11": 500,
@@ -101,7 +102,7 @@
       }
     },
     {
-      "id": "LUT5258",
+      "id": "LUT22",
       "name": "Lutfur",
       "expectedAmount": 500,
       "contributions": {
@@ -112,7 +113,7 @@
       }
     },
     {
-      "id": "RUB00",
+      "id": "RUB33",
       "name": "Rubel",
       "expectedAmount": 500,
       "contributions": {}
@@ -240,7 +241,7 @@
     },
     {
       "date": "2026-04-05",
-      "amount": 5456,
+      "amount": 5455.5,
       "note": "2400 for Eid and 3000 as monthly"
     },
     {
@@ -260,17 +261,17 @@
     },
     {
       "date": "2026-08-05",
-      "amount": 4583,
+      "amount": 4583.25,
       "note": ""
     },
     {
       "date": "2026-09-05",
-      "amount": 3056,
+      "amount": 3055.5,
       "note": ""
     },
     {
       "date": "2026-10-05",
-      "amount": 3055,
+      "amount": 3055.5,
       "note": ""
     }
   ],
