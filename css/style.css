@@ -709,3 +709,6 @@ html[lang="bn"] .dash-stat-value { font-family: var(--font-bn); font-weight: 700
   border: 1px dashed var(--border);
   border-radius: var(--radius-m);
 }
+
+.footer-link { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+.footer-link:hover { color: var(--ink); }
