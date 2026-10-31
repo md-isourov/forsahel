@@ -8,7 +8,7 @@
   "site": {
     "deceased": {
       "name": "SAHEL MIA",
-      "nameBn": "[সাহেল মিয়া]",
+      "nameBn": "সাহেল মিয়া",
       "birthDate": "[18 Oct, 1996]",
       "passingDate": "[18 Oct, 2025]",
       "coverImage": "images/cover.jpg",
@@ -25,7 +25,7 @@
   "donors": [
     {
       "id": "SRV07",
-      "name": "Md. Sourov",
+      "name": "Sourov",
       "expectedAmount": 500,
       "contributions": {
         "2025-11": 500,
@@ -44,7 +44,7 @@
     },
     {
       "id": "RIF01",
-      "name": "Muntasir Mamun Rifat",
+      "name": "Rifat",
       "expectedAmount": 500,
       "contributions": {
         "2025-11": 500,
@@ -63,7 +63,7 @@
     },
     {
       "id": "DIDAR",
-      "name": "Detharuzzaman Sakil",
+      "name": "Sakil",
       "expectedAmount": 500,
       "contributions": {
         "2025-11": 500,
@@ -81,7 +81,7 @@
     },
     {
       "id": "KAM999",
-      "name": "Kamrul Huda",
+      "name": "Kamrul",
       "expectedAmount": 500,
       "contributions": {
         "2025-11": 500,
@@ -102,7 +102,7 @@
       }
     },
     {
-      "id": "LUT22",
+      "id": "LUT5258",
       "name": "Lutfur",
       "expectedAmount": 500,
       "contributions": {
@@ -136,7 +136,7 @@
       }
     },
     {
-      "id": "SAB55",
+      "id": "SR",
       "name": "Sabbir",
       "expectedAmount": 1670,
       "startMonth": "2025-12",
@@ -174,14 +174,15 @@
       }
     },
     {
-      "id": "DEE77",
+      "id": "DEEP77",
       "name": "Deepa",
       "expectedAmount": 1020,
       "startMonth": "2025-12",
       "contributions": {
         "2025-12": 500,
         "2026-01": 1000,
-        "2026-03": 2000,
+        "2026-02": 1000,
+        "2026-03": 1000,
         "2026-04": 1020,
         "2026-05": 1020,
         "2026-06": 1020,
@@ -192,7 +193,7 @@
       }
     },
     {
-      "id": "BAY88",
+      "id": "BAYZ88",
       "name": "Bayzid",
       "expectedAmount": 500,
       "startMonth": "2026-10",
@@ -279,50 +280,148 @@
     {
       "src": "images/gallery-01.jpg",
       "caption": {
-        "en": "[CAPTION_1]",
-        "bn": "[বাংলা ক্যাপশন ১]"
+        "en": "[]",
+        "bn": "[]"
       }
     },
     {
       "src": "images/gallery-02.jpg",
       "caption": {
-        "en": "[CAPTION_2]",
-        "bn": "[বাংলা ক্যাপশন ২]"
+        "en": "[]",
+        "bn": "[]"
       }
     },
     {
       "src": "images/gallery-03.jpg",
       "caption": {
-        "en": "[CAPTION_3]",
-        "bn": "[বাংলা ক্যাপশন ৩]"
+        "en": "[]",
+        "bn": "[]"
       }
     },
     {
       "src": "images/gallery-04.jpg",
       "caption": {
-        "en": "[CAPTION_4]",
-        "bn": "[বাংলা ক্যাপশন ৪]"
+        "en": "[]",
+        "bn": "[]"
       }
     },
     {
       "src": "images/gallery-05.jpg",
       "caption": {
-        "en": "[CAPTION_5]",
-        "bn": "[বাংলা ক্যাপশন ৫]"
+        "en": "[]",
+        "bn": "[]"
       }
     },
     {
       "src": "images/gallery-06.jpg",
       "caption": {
-        "en": "[CAPTION_5]",
-        "bn": "[বাংলা ক্যাপশন ৫]"
+        "en": "[]",
+        "bn": "[]"
       }
     },
     {
       "src": "images/gallery-07.jpg",
       "caption": {
-        "en": "[CAPTION_6]",
-        "bn": "[বাংলা ক্যাপশন ৬]"
+        "en": "[]",
+        "bn": "[]"
+      }
+    },
+    {
+      "src": "images/gallery-08.jpg",
+      "caption": {
+        "en": "[]",
+        "bn": "[]"
+      }
+    },
+    {
+      "src": "images/gallery-09.jpg",
+      "caption": {
+        "en": "[]",
+        "bn": "[]"
+      }
+    },
+    {
+      "src": "images/gallery-10.jpg",
+      "caption": {
+        "en": "[]",
+        "bn": "[]"
+      }
+    },
+    {
+      "src": "images/gallery-11.jpg",
+      "caption": {
+        "en": "[]",
+        "bn": "[]"
+      }
+    },
+    {
+      "src": "images/gallery-12.jpg",
+      "caption": {
+        "en": "[]",
+        "bn": "[]"
+      }
+    },
+    {
+      "src": "images/gallery-13.jpg",
+      "caption": {
+        "en": "[]",
+        "bn": "[]"
+      }
+    },
+    {
+      "src": "images/gallery-14.jpg",
+      "caption": {
+        "en": "[]",
+        "bn": "[]"
+      }
+    },
+    {
+      "src": "images/gallery-15.jpg",
+      "caption": {
+        "en": "[]",
+        "bn": "[]"
+      }
+    },
+    {
+      "src": "images/gallery-16.jpg",
+      "caption": {
+        "en": "[]",
+        "bn": "[]"
+      }
+    },
+    {
+      "src": "images/gallery-17.jpg",
+      "caption": {
+        "en": "[]",
+        "bn": "[]"
+      }
+    },
+    {
+      "src": "images/gallery-18.jpg",
+      "caption": {
+        "en": "[]",
+        "bn": "[]"
+      }
+    },
+    {
+      "src": "images/gallery-19.jpg",
+      "caption": {
+        "en": "[]",
+        "bn": "[]"
+      }
+    },
+    {
+      "src": "images/gallery-20.jpg",
+      "caption": {
+        "en": "[]",
+        "bn": "[]"
+      }
+    },
+    {
+      "src": "images/gallery-21.jpg",
+      "caption": {
+        "en": "[]",
+        "bn": "[]"
       }
     }
   ]
