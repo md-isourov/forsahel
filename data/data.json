@@ -314,6 +314,13 @@
     {
       "src": "images/gallery-06.jpg",
       "caption": {
+        "en": "[CAPTION_5]",
+        "bn": "[বাংলা ক্যাপশন ৫]"
+      }
+    },
+    {
+      "src": "images/gallery-07.jpg",
+      "caption": {
         "en": "[CAPTION_6]",
         "bn": "[বাংলা ক্যাপশন ৬]"
       }
