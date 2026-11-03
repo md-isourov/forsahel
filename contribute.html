@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contribute — In loving memory</title>
+<meta name="description" content="Send help to the family via bKash.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Contribute — In loving memory">
+<meta property="og:type" content="website">
+<link rel="icon" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <nav class="nav container" aria-label="Primary">
+    <a class="nav-brand" href="index.html" data-i18n="hero_kicker">In loving memory</a>
+    <ul class="nav-links">
+      <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+      <li><a href="contributions.html" data-i18n="nav_contributions">Contributions</a></li>
+      <li><a href="gallery.html" data-i18n="nav_gallery">Gallery</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="lang-btn" type="button" data-lang-toggle data-lang-toggle-label>বাংলা</button>
+      <button class="menu-btn" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-menu container" id="mobile-menu" data-mobile-menu>
+    <a href="index.html" data-i18n="nav_home">Home</a>
+    <a href="contributions.html" data-i18n="nav_contributions">Contributions</a>
+    <a href="gallery.html" data-i18n="nav_gallery">Gallery</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="section-tight container">
+    <h1 class="section-heading" data-i18n="contribute_heading">Contribute or send help</h1>
+    <p class="section-sub" data-i18n="contribute_sub">Every contribution goes to his family.</p>
+
+    <div class="pay-card" data-pay-card>
+      <p class="pay-label" id="bkash-label" data-i18n="contribute_bkash_label">bKash number</p>
+      <div class="pay-row">
+        <span class="pay-number" data-bkash-number aria-labelledby="bkash-label">—</span>
+        <button class="btn btn-primary" type="button" data-copy-btn data-i18n="contribute_copy" hidden>Copy number</button>
+      </div>
+      <p class="pay-status" data-copy-status role="status" aria-live="polite"></p>
+
+      <div class="pay-note">
+        <h2 data-i18n="contribute_instruction_title">Before you send</h2>
+        <p data-i18n="contribute_instruction">Please add your name as the reference when you send money.</p>
+      </div>
+    </div>
+
+    <p class="pay-back"><a class="text-link" href="contributions.html" data-i18n="contribute_see_contributions">See the contributions</a></p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <span data-i18n="footer_statement">Maintained quietly by friends, for the family.</span>
+    <span><span data-i18n="footer_made_with_care">Made with care by friends.</span> · <span id="year"></span> · <a class="footer-link" href="admin/" data-i18n="footer_admin">Admin</a></span>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/contribute.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

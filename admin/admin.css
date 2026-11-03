@@ -76,3 +76,41 @@
 }
 
 .ledger-wrap:focus-visible { box-shadow: var(--focus-ring); }
+
+/* Year collapse */
+.ledger .year-head { padding: 0; text-align: center; }
+.ledger .year-btn {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 0.88rem;
+  padding: 10px 14px;
+  cursor: pointer;
+  text-align: center;
+}
+.ledger .year-btn:hover { background: var(--teal-soft); }
+.ledger .year-cell { background: var(--surface-sunken); font-weight: 500; }
+.ledger .year-due {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--due);
+}
+
+/* Reserve fund */
+.fund-heading { margin-top: 56px; }
+.fund-table .left { text-align: left; }
+.fund-table .details { white-space: normal; min-width: 220px; }
+.asset-tag {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--teal-soft);
+  color: var(--teal);
+  font-size: 0.74rem;
+  font-weight: 600;
+}
+.fund-subheading { font-size: 1.05rem; margin: 28px 0 12px; }

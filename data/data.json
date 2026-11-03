@@ -1,7 +1,7 @@
 {
   "meta": {
     "startMonth": "2025-11",
-    "currentMonth": "2026-12",
+    "currentMonth": "2026-11",
     "currency": "BDT",
     "currencySymbol": "৳"
   },
@@ -20,6 +20,12 @@
         "en": "A small group of friends set aside a monthly contribution for his wife, two daughters & his mother. This page keeps that promise visible and accountable.",
         "bn": "কয়েকজন বন্ধু মিলে প্রতি মাসে তাঁর স্ত্রী, দুই মেয়ের এবং তার মায়ের জন্য কিছু অর্থ রাখেন। এই পাতাটি সেই প্রতিশ্রুতিকে স্বচ্ছ ও দৃশ্যমান রাখে।"
       }
+    },
+    "payment": {
+      "bkashNumber": "01624052200"
+    },
+    "contact": {
+      "messenger": "username.sourov"
     }
   },
   "donors": [
@@ -41,7 +47,6 @@
         "2026-09": 500,
         "2026-10": 500,
         "2026-11": 500
-        
       }
     },
     {
@@ -430,5 +435,36 @@
         "bn": "[]"
       }
     }
-  ]
+  ],
+  "fund": {
+    "entries": [
+      {
+        "date": "2025-11-20",
+        "type": "deposit",
+        "amount": 000000,
+        "details": "[SAMPLE] Initial amount collected from friends"
+      },
+      {
+        "date": "2025-12-01",
+        "type": "invest",
+        "amount": 000000,
+        "asset": "Land",
+        "details": "[SAMPLE] Bought land for the children's future"
+      },
+      {
+        "date": "2026-11-01",
+        "type": "return",
+        "amount": 00000,
+        "asset": "Land",
+        "details": "[SAMPLE] First return from the land"
+      },
+      {
+        "date": "2026-11-05",
+        "type": "invest",
+        "amount": 00000,
+        "asset": "Other investment",
+        "details": "[SAMPLE] Returns invested again in something different"
+      }
+    ]
+  }
 }

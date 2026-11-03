@@ -61,8 +61,10 @@ It has four parts:
 ```
 **`currentMonth` is the one field you must update every month.** It
 controls which months count as "due" — nothing before `startMonth` and
-nothing after `currentMonth` is ever counted, and `currentMonth` itself is
-never marked as due (the month isn't over yet).
+nothing after `currentMonth` is ever counted. **`currentMonth` itself IS
+counted:** if a donor hasn't paid for the current month yet, they show as
+1 month due. (This doesn't affect "Given this month" on the home page, which
+only looks at payments made to the family.)
 
 ### `site.deceased`
 The memorial content shown on the home page — name (English and Bangla),
@@ -124,7 +126,8 @@ Add `"YYYY-MM": amount` to that donor's `contributions` object.
 
 **Mark a month as due**
 You don't mark it — just don't add that month to `contributions`. Any
-past month with no entry is automatically shown as due.
+month up to and including `currentMonth` with no entry is automatically
+shown as due.
 
 **Record money given to the family**
 Add a new `{ "date": "YYYY-MM-DD", "amount": ..., "note": "" }` object to
@@ -300,3 +303,43 @@ memorial-site/
 - Donor names and IDs in `data.json`.
 - `familyPayments` and `contributions` sample data — replace with real
   figures, or clear them and start from your actual start month.
+
+
+---
+
+## 10. Contribute page, Messenger link, and reserve fund
+
+**Contribute page (`contribute.html`)** — reached from the "Contribute or
+send help" button on the home page. It shows the bKash number with a Copy
+button and the "add your name as reference" instruction. Change the number
+in `data/data.json` → `site.payment.bkashNumber`. Change the wording in
+`js/i18n.js` (keys starting with `contribute_`).
+
+**"What's my Donor ID?" link** — on the Contributions page it opens
+Messenger (`https://m.me/<username>`). Change the profile in
+`data/data.json` → `site.contact.messenger` (just the username, no `@`).
+
+**Admin ledger by year** — on the admin page, click a year heading (e.g.
+"2025") to collapse that year into one summary column, or click again to
+expand. Earlier years start collapsed; the latest year starts expanded.
+
+**Reserve fund table (admin page)** — driven by `fund.entries` in
+`data.json`. One entry per event, in any order (they are sorted by date):
+
+```json
+{ "date": "2026-11-01", "type": "return", "amount": 20000,
+  "asset": "Land", "details": "First return from the land" }
+```
+
+`type` is one of:
+
+| type      | meaning                                              | effect                       |
+|-----------|------------------------------------------------------|------------------------------|
+| `deposit` | money collected into the fund                        | cash in hand goes up         |
+| `invest`  | cash put into an investment (give it an `asset` name)| cash down, invested up       |
+| `return`  | income an investment paid out (optional `asset`)     | cash in hand goes up         |
+| `payout`  | money given out (e.g. to the children)               | cash in hand goes down       |
+
+To reinvest a return, add a `return` entry and then an `invest` entry.
+Amounts are at cost (what was paid), not market value. The sample entries
+marked `[SAMPLE]` must be replaced with your real records.

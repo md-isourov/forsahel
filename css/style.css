@@ -159,7 +159,8 @@ button, input { font-family: inherit; font-size: inherit; color: inherit; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
   gap: 16px;
 }
 
@@ -390,7 +391,7 @@ html[lang="bn"] .stat-value { font-family: var(--font-bn); font-weight: 700; }
    ========================================================================== */
 
 .section { padding: 56px 0; }
-.section-tight { padding: 32px 0; }
+.section-tight { padding-top: 32px; padding-bottom: 32px; }
 
 .section-heading {
   font-size: clamp(1.4rem, 3.4vw, 1.85rem);
@@ -712,3 +713,51 @@ html[lang="bn"] .dash-stat-value { font-family: var(--font-bn); font-weight: 700
 
 .footer-link { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
 .footer-link:hover { color: var(--ink); }
+
+/* Button rows, text links, contribute page */
+.btn-row { display: flex; flex-wrap: wrap; gap: 12px; }
+
+.text-link {
+  color: var(--teal);
+  font-weight: 600;
+  font-size: 0.92rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.text-link:hover { color: var(--ink); }
+.lookup-help { margin-top: 12px; }
+
+.pay-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-l);
+  padding: 28px;
+  max-width: 560px;
+  box-shadow: var(--shadow);
+}
+.pay-label { font-size: 0.85rem; color: var(--ink-muted); margin-bottom: 8px; }
+.pay-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+.pay-number {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 6vw, 2rem);
+  letter-spacing: 0.02em;
+  font-variant-numeric: tabular-nums;
+  user-select: all;
+}
+.pay-status { min-height: 1.4em; font-size: 0.88rem; color: var(--ok); margin-top: 10px; }
+.pay-status.error { color: var(--due-strong); }
+.pay-note {
+  margin-top: 22px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+.pay-note h2 { font-size: 1.05rem; margin-bottom: 6px; }
+.pay-note p { color: var(--ink-muted); }
+.pay-back { margin-top: 24px; }
+
+[hidden] { display: none !important; }

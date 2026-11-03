@@ -52,15 +52,16 @@ function donorStartMonth(donor, meta) {
 }
 
 /**
- * A donor is "due" for any month from the site's start month up to (but not
- * including) the current month, where no contribution was recorded.
- * The current month and any future month are never counted as due.
+ * A donor is "due" for any month from their start month up to AND INCLUDING
+ * the current month where no contribution was recorded.
+ * Future months (after currentMonth) are never counted as due.
+ * (This is separate from "Given this month" on the home page, which only
+ * looks at payments made to the family.)
  */
 function getDueMonths(donor, meta) {
-  const lastPastMonth = previousMonth(meta.currentMonth);
   const from = donorStartMonth(donor, meta);
-  if (lastPastMonth < from) return [];
-  const months = monthRange(from, lastPastMonth);
+  if (meta.currentMonth < from) return [];
+  const months = monthRange(from, meta.currentMonth);
   return months.filter((ym) => !(donor.contributions && donor.contributions[ym] > 0));
 }
 
@@ -84,7 +85,7 @@ function getDonorHistory(donor, meta) {
     let status;
     if (amount > 0) status = "paid";
     else if (dueSet.has(ym)) status = "due";
-    else status = "upcoming"; // current month, not yet contributed
+    else status = "upcoming"; // not reachable now (current month counts as due); kept for safety
     return { month: ym, amount: amount || null, status };
   }).reverse(); // most recent first
 }

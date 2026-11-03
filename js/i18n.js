@@ -24,6 +24,21 @@ const TRANSLATIONS = {
     home_about_heading: "How this works",
     home_about_body: "A small circle of friends contributes every month. What's collected is passed on to the family. This site exists so everyone involved — donors and family alike — can see that it's happening, without publishing anyone's private financial details.",
     home_cta: "See the contributions",
+    home_cta_contribute: "Contribute or send help",
+
+    contribute_heading: "Contribute or send help",
+    contribute_sub: "Every contribution goes to his family. Thank you for being part of this.",
+    contribute_bkash_label: "bKash number",
+    contribute_copy: "Copy number",
+    contribute_copied: "Copied",
+    contribute_copy_failed: "Couldn't copy. Please select the number and copy it manually.",
+    contribute_instruction_title: "Before you send",
+    contribute_instruction: "Please add your name as the reference when you send money, so we can record it against the right person.",
+    contribute_see_contributions: "See the contributions",
+    contribute_unavailable: "We couldn't load the payment details right now. Please try again later.",
+
+    lookup_forgot_id: "What's my Donor ID?",
+    lookup_forgot_id_hint: "Opens Messenger",
 
     contrib_heading: "Contributions",
     contrib_subheading: "An open record of who's up to date, and a private view for each donor's own history.",
@@ -84,6 +99,21 @@ const TRANSLATIONS = {
     home_about_heading: "যেভাবে এটি কাজ করে",
     home_about_body: "বন্ধুদের একটি ছোট দল প্রতি মাসে অর্থ দেন। যা সংগ্রহ করা হয় তা পরিবারের কাছে পৌঁছে দেওয়া হয়। এই সাইটটি রয়েছে যাতে সবাই — দাতা ও পরিবার — দেখতে পারেন এটি নিয়মিত ঘটছে, কারো ব্যক্তিগত আর্থিক তথ্য প্রকাশ না করেই।",
     home_cta: "অনুদান দেখুন",
+    home_cta_contribute: "অনুদান দিন বা সাহায্য পাঠান",
+
+    contribute_heading: "অনুদান দিন বা সাহায্য পাঠান",
+    contribute_sub: "প্রতিটি অনুদান তাঁর পরিবারের কাছে পৌঁছায়। এই উদ্যোগের পাশে থাকার জন্য ধন্যবাদ।",
+    contribute_bkash_label: "বিকাশ নম্বর",
+    contribute_copy: "নম্বর কপি করুন",
+    contribute_copied: "কপি হয়েছে",
+    contribute_copy_failed: "কপি করা যায়নি। অনুগ্রহ করে নম্বরটি সিলেক্ট করে নিজে কপি করুন।",
+    contribute_instruction_title: "টাকা পাঠানোর আগে",
+    contribute_instruction: "টাকা পাঠানোর সময় অনুগ্রহ করে রেফারেন্স হিসেবে আপনার নাম লিখে দিন, যাতে সঠিক ব্যক্তির নামে এটি রেকর্ড করা যায়।",
+    contribute_see_contributions: "অনুদান দেখুন",
+    contribute_unavailable: "এই মুহূর্তে পেমেন্টের তথ্য লোড করা যায়নি। অনুগ্রহ করে পরে আবার চেষ্টা করুন।",
+
+    lookup_forgot_id: "আমার Donor ID কী?",
+    lookup_forgot_id_hint: "মেসেঞ্জার খুলবে",
 
     contrib_heading: "অনুদান",
     contrib_subheading: "কে হালনাগাদ আছেন তার একটি খোলা তালিকা, এবং প্রতিটি দাতার নিজস্ব ইতিহাস দেখার একটি ব্যক্তিগত সুবিধা।",
@@ -150,7 +180,7 @@ function t(key, vars) {
   let str = (TRANSLATIONS[lang] && TRANSLATIONS[lang][key]) || TRANSLATIONS.en[key] || key;
   if (vars) {
     Object.keys(vars).forEach((k) => {
-      str = str.replace(`{${k}}`, vars[k]);
+      str = str.replace(`{${k}}`, lang === "bn" ? toBnDigits(vars[k]) : vars[k]);
     });
   }
   return str;

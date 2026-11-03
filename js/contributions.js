@@ -17,6 +17,13 @@
     return;
   }
 
+  // Messenger link comes from data.json (site.contact.messenger); the HTML has a default.
+  const messengerLink = document.querySelector("[data-messenger-link]");
+  const messengerName = data.site && data.site.contact && data.site.contact.messenger;
+  if (messengerLink && messengerName) {
+    messengerLink.href = "https://m.me/" + encodeURIComponent(String(messengerName).replace(/^@/, ""));
+  }
+
   function statusInfo(dueCount) {
     if (dueCount === 0) return { key: "status_up_to_date", vars: null, cls: "status-ok" };
     if (dueCount === 1) return { key: "status_due_one", vars: null, cls: "status-due" };
@@ -56,7 +63,7 @@
     dashboard.querySelector("[data-dash-current]").textContent = summary.currentMonthAmount
       ? formatCurrency(summary.currentMonthAmount, symbol)
       : t("not_yet_started");
-    dashboard.querySelector("[data-dash-due]").textContent = summary.dueCount;
+    dashboard.querySelector("[data-dash-due]").textContent = getLang() === "bn" ? toBnDigits(summary.dueCount) : summary.dueCount;
     dashboard.querySelector("[data-dash-last]").textContent = summary.lastContribution
       ? formatMonthLabel(summary.lastContribution.month)
       : t("not_yet_started");
